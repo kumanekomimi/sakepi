@@ -16,8 +16,8 @@ function init() {
 
 //サイズ変更処理
 function resize() {
-    container.style.width = window.innerWidth + 'px';
-    container.style.height = window.innerHeight + 'px';
+    container.style.width = window.innerWidth-20 + 'px';
+    container.style.height = window.innerHeight-20 + 'px';
     canvas.width = window.innerWidth * window.devicePixelRatio;
     canvas.height = window.innerHeight * window.devicePixelRatio;
 }
