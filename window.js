@@ -19,12 +19,13 @@ function resize() {
     container.style.width = window.innerWidth-20 + 'px';
     container.style.height = window.innerHeight-20 + 'px';
     canvas.width = window.innerWidth * window.devicePixelRatio;
-    canvas.height = window.innerHeight * window.devicePixelRatio;
+    canvas.height = (9/16) * canvas.width;
 }
 
 window.onload = function () {
     init();
     resize();
+    canvas.viewport(0, 0, canvas.canvas.width, canvas.canvas.height);
 };
 
 //ブラウザの大きさが変わった時に行う処理
